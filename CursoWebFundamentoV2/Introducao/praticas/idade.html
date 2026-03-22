@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Soma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodrigo Oliveira">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="Validação de idade">
+</head>
+<body>
+    <button class="btnIdade" onclick="handleClick()">Informe sua idade</button>
+    <script>
+        function handleClick(){
+            let idade = prompt('Qual a sua idade?');
+            if (isNaN(idade) || idade == '' || idade <= 0) {
+                alert('Favor informar idade válido!');
+                return;
+            }else if(idade == null){
+                alert('Operação cancelado!');
+                return;
+            }else if (idade >= 18){
+                alert(`Maior de idade: ${idade} Anos!`);
+            }else{
+                alert(`Menor de idade: ${idade} Anos!`);
+            }
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: bisque;
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+    outline: 5px solid orange;
+    border: 5px solid rebeccapurple;
+}
+p{
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.p1{
+    background-color: #70706e;
+    padding: 25px;
+}
+.p2{
+    padding: 25px;
+    border: 10px solid green;
+}
+.p3{
+    padding: 25px;
+    border: 10px solid green;
+    box-sizing: border-box;
+}
+.p4{
+    padding: 25px;
+    border: 10px solid green;
+    box-sizing: content-box;
+}

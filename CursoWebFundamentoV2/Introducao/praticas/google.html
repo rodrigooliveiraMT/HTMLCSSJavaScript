@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Google</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rodrigo Oliveira">
+        <meta name="keywords" content="html, css, javascript">
+        <meta name="description" content="1º Aula de Html, CSS e JavaScript">
+    </head>
+    <style>
+        body{
+            font-size: 30px;
+        }
+        .btnVoltar{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            outline: 10px;
+            border-radius: 5px;
+            border-width: 3px;
+            margin: 3px;
+            background-color: red;
+            padding: 5px 10px 5px 10px;
+        }
+        .btnAvancar{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            outline: 10px;
+            border-radius: 5px;
+            border-width: 3px;
+            margin: 3px;
+            background-color: blue;
+            padding: 5px 10px 5px 10px;
+        }
+        .btnOK{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            outline: 10px;
+            border-radius: 5px;
+            border-width: 3px;
+            margin: 3px;
+            background-color: green;
+            padding: 5px 10px 5px 10px;
+        }
+        .btnInformarName{
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+            outline: 10px;
+            border-radius: 5px;
+            border-width: 3px;
+            margin: 3px;
+            background-color: rgb(92, 194, 212);
+            padding: 5px 10px 5px 10px;
+        }
+    </style>
+<body>
+    <p>
+        <input class="btnVoltar" type="submit" value="Voltar" onclick="window.history.back()">
+        <input class="btnAvancar" type="submit" value="Avançar" onclick="window.location.href='https://www.google.com.br';">
+        <button class="btnOK" value="OK" onclick="window.Location(alert(confirm('Você realmente deseja confirma?') ? 'Confirmado com sucesso!' : 'Cancelado com sucesso!'))">OK</button>
+        <button class="btnInformarName" onclick="handleClick()">Informe Seu Nome</button>
+    </p>
+
+    <script>
+        let nomePadrao = "Rodrigo Oliveira";
+        
+        function handleClick(){
+            let nome = prompt('Qual seu nome?');
+            let resultado = nome ?? nomePadrao;
+            if(resultado == null || resultado == ''){
+                alert("Coluna 1\tColuna 2");
+                alert("Linha 1\rLinha 2");
+                alert("Olá\b Mundo");
+                alert("Café de São João: 'Delicioso!'");
+                alert("Ele disse: \"Olá!\"");
+            }else{
+                alert(`Olá, seu nome é: ${resultado}!`);
+            }
+        }
+        console.log(nomePadrao);
+    </script>
+    <h1>Google</h1>
+</body>
+</html>

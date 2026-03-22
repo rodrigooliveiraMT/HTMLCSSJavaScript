@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Soma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rodrigo Oliveira">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="Criação ação de soma">
+</head>
+<body>
+    <button class="btnSomaValores" onclick="handleClick()">Somar valores?</button>
+    <button class="btnIdade" onclick="handleClick1()">Informe sua idade</button>
+    <script>
+        var soma = 0;
+        
+        function handleClick() {
+            // Obtém valores dos prompts e converte para números
+            let valor1 = parseInt(prompt('Informe 1º valor:'));
+            let valor2 = parseInt(prompt('Informe 2º valor:'));
+            
+            // Verifica se as conversões foram bem-sucedidas
+            if (isNaN(valor1) || isNaN(valor2)) {
+                alert('Favor informar valores válidos!');
+                return;
+            }
+    
+            // Calcula a soma
+            soma = valor1 + valor2;
+            
+            // Exibe o resultado
+            alert(`O resultado da soma é: ${soma}`);
+        }
+        function handleClick1(){
+            let idade = prompt('Qual a sua idade?');
+            if (isNaN(idade) || idade == '' || idade == null) {
+                alert('Favor informar idade válido!');
+                return;
+            }else if (idade >= 18){
+                alert('Autorizado!');
+            }else{
+                alert('Não autorizado!')
+            }
+        }
+    </script>    
+</body>
+</html>

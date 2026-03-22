@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Introdução de CSS</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rodrigo Oliveira" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="Criação de html com CSS Inline, Interno e Externo" />
+
+    <link rel="stylesheet" href="../ArquivosCSS/introducaoCSS.css" />
+
+    <style>
+        body{
+            color: red;
+        }
+        .cssInterno {
+            font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+            font-style: oblique;
+            font-size: 30px;
+            font-weight: bold;
+            color: green;
+            text-transform: capitalize;
+            text-align: center;
+            background-color: #cccccc;
+            border-radius: 5px;
+            border: 5px #6495ed solid;
+            outline: 5px #777 solid;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Introdução de CSS</h1>
+    <hr />
+    <h2 class="cssInline" style="
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: oblique;
+        font-size: 30px;
+        font-weight: bold;
+        color: green;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: #cccccc;
+        border-radius: 5px;
+        border: 5px #6495ed solid;
+        outline: 5px #777 solid;
+        margin: 10px;
+        padding: 10px;
+      ">CCS INLINE</h2>
+    <hr />
+    <h2 class="cssInterno">CSS INTERNO</h2>
+    <hr />
+    <h2 class="cssExterno">CSS EXTERNO</h2>
+</body>
+</html>

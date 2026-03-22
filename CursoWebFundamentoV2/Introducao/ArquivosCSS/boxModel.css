@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+}
+h1{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dotted solid;
+    border-color: green;
+    margin: 15px;
+    border-bottom: 2px solid green;
+    outline: thick double blue;
+}
+.widthheight{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dotted solid;
+    border-color: green;
+    margin: 15px;
+    border-bottom: 2px solid green;
+    outline: 2px solid burlywood;
+}
+.padding{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dotted solid;
+    border-color: green;
+    margin: 15px;
+    border-bottom: 2px solid green;
+    outline: 2px solid burlywood;
+}
+.margin{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dotted solid;
+    border-color: green;
+    margin: 15px;
+    border-bottom: 2px solid green;
+    outline: 2px solid burlywood;
+}
+.border{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dotted solid;
+    border-color: green;
+    margin: 15px;
+    border-bottom: 2px solid green;
+    outline: 2px solid burlywood;
+}
+.outline{
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dotted solid;
+    border-color: green;
+    margin: 15px;
+    border-bottom: 2px solid green;
+    outline: 2px solid burlywood;
+}
+.widthheight2{
+    text-align: center;
+    background-color: #ccc;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border-style: dotted solid;
+    border-color: green;
+    border-bottom: 2px solid green;
+    outline: 2px solid burlywood;
+}
